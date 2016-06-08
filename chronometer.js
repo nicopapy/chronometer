@@ -16,14 +16,14 @@ function changeElement(elementToChange, value) {
 var countingSeconds = function() {
   timing = setTimeout(function() {
     countingSeconds();
-  }, 1000);
+  }, 100);
 
-  if (secondsUpdated < 60) {
+  if (secondsUpdated < 59) {
     secondsUpdated += 1;
   } else {
     secondsUpdated = 0;
 
-    if (minutesUpdated < 60) {
+    if (minutesUpdated < 59) {
       minutesUpdated += 1;
       changeElement("minutes", minutesUpdated);
     } else {
