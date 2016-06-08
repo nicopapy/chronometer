@@ -8,11 +8,13 @@ Chronometer = function() {
 
 Chronometer.prototype = {
 
+  // To Do Create something diferente for this guy
   changeElement: function(elementToChange, value) {
     value = value < 10 ? "0" + value : value
     document.getElementById(elementToChange).innerHTML = value;
   },
 
+  // To Do Create something diferente for this guy
   countingSeconds: function() {
     var that = this;
 
